@@ -1,7 +1,7 @@
 {
   "name": "reflect-ownkeys",
-  "version": "1.0.0",
-  "description": "Polyfill for ES6 Reflect.ownKeys",
+  "version": "0.99.0",
+  "description": "Polyfill for ES6's Reflect.ownKeys",
   "main": "index.js",
   "scripts": {
     "test": "mocha"
@@ -13,5 +13,9 @@
     "polyfill"
   ],
   "author": "Glen Mailer <glen@stainlessed.co.uk>",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^2.4.5"
+  }
 }
