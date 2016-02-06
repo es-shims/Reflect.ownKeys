@@ -31,7 +31,11 @@ describe('Reflect.ownKeys()', function() {
   });
 
   // Only Relevant to ES6 Symbol support past this point
-  var symbolDesc = (typeof Symbol === 'function')  ? describe : describe.skip;
+  var symbolDesc = describe;
+  if (typeof Symbol !== 'function') {
+    symbolDesc = describe.skip;
+    Symbol = function() { return 0; };
+  }
 
   symbolDesc('with Symbol', function() {
     var a = Symbol('a'), b = Symbol('b'), c = Symbol('c');
