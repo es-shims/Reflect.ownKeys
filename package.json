@@ -4,7 +4,7 @@
 	"description": "Polyfill for ES6's Reflect.ownKeys",
 	"main": "index.js",
 	"scripts": {
-		"test": "mocha",
+		"test": "node test/test",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
@@ -26,7 +26,8 @@
 	"homepage": "https://github.com/glenjamin/Reflect.ownKeys",
 	"devDependencies": {
 		"auto-changelog": "^1.16.2",
-		"mocha": "^2.4.5"
+		"has-symbols": "^1.0.1",
+		"tape": "^5.0.0-next.3"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",

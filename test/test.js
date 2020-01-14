@@ -1,67 +1,71 @@
-var assert = require('assert');
+'use strict';
+
+var test = require('tape');
+var hasSymbols = require('has-symbols')();
 
 var ownKeys = require('..');
 
-describe('Reflect.ownKeys()', function() {
-  describe('normal object', function() {
-    var o = { a: 1, b: 2 };
-    it('should get own keys', function() {
-      assert.deepEqual(ownKeys(o), ["a", "b"]);
-    });
+test('normal object', function (t) {
+  var o = { a: 1, b: 2 };
+
+  t.deepEqual(ownKeys(o), ['a', 'b'], 'gets own keys');
+
+  t.end();
+});
+
+test('object with prototype', function (t) {
+  var p = { a: 1, b: 2 };
+  var o = { c: 3, d: 4, __proto__: p };
+
+  t.deepEqual(ownKeys(o), ['c', 'd'], 'gets own keys');
+
+  t.end();
+});
+
+test('object with non-enumerable properties', { skip: !Object.defineProperty }, function (t) {
+  t.plan(1);
+
+  var o = {};
+  Object.defineProperty(o, 'a', {
+    enumerable: false,
+    value: 1
   });
-  describe('object with prototype', function() {
-    var p = { a: 1, b: 2 };
-    var o = Object.create(p);
-    o.c = 3, o.d = 4;
-    it('should get own keys', function() {
-      assert.deepEqual(ownKeys(o), ["c", "d"]);
-    });
-  });
-  describe('object with non-enumerable properties', function() {
-    var o = {};
-    Object.defineProperty(o, "a", {
-      value: 1, enumerable: false
-    });
-    Object.defineProperty(o, "b", {
-      get: function(){ return 2; }, enumerable: false
-    });
-    it('should get own keys', function() {
-      assert.deepEqual(ownKeys(o), ["a", "b"]);
-    });
+  Object.defineProperty(o, 'b', {
+    get: function () { return 2; },
+    enumerable: false
   });
 
-  // Only Relevant to ES6 Symbol support past this point
-  var symbolDesc = describe;
-  if (typeof Symbol !== 'function') {
-    symbolDesc = describe.skip;
-    Symbol = function() { return 0; };
-  }
+  t.deepEqual(ownKeys(o), ['a', 'b'], 'gets own keys');
+});
 
-  symbolDesc('with Symbol', function() {
-    var a = Symbol('a'), b = Symbol('b'), c = Symbol('c');
-    describe('object with symbol properties', function() {
-      var o = { a: 1, b: 2 }; o[a] = 3, o[b] = 4;
-      it('should get own keys', function() {
-        assert.deepEqual(ownKeys(o), ["a", "b", a, b]);
-      });
+test('Symbols', { skip: !hasSymbols }, function (t) {
+  var a = Symbol('a');
+  var b = Symbol('b');
+  var c = Symbol('c');
+
+  var o = { a: 1, b: 2 };
+  o[a] = 3;
+  o[b] = 4;
+  t.deepEqual(ownKeys(o), ['a', 'b', a, b], 'object with own symbol properties gets own keys');
+
+  var p = { a: 1 }; p[a] = 3;
+  var child = { __proto__: p };
+  child.b = 2;
+  child[b] = 4;
+  t.deepEqual(ownKeys(child), ['b', b], 'object with symbol properties in prototype gets own keys');
+
+
+  t.test('object with non-enumerable symbol properties', { skip: !Object.defineProperty }, function (st) {
+    st.plan(1);
+
+    var o = { a: 1 };
+    Object.defineProperty(o, a, {
+      enumerable: false,
+      value: 1
     });
-    describe('object with symbol properties in prototype', function() {
-      var p = { a: 1 }; p[a] = 3;
-      var o = Object.create(p);
-      o.b = 2; o[b] = 4;
-      it('should get own keys', function() {
-        assert.deepEqual(ownKeys(o), ["b", b]);
-      });
-    });
-    describe('object with non-enumerable symbol properties', function() {
-      var o = { a: 1 };
-      Object.defineProperty(o, a, {
-        value: 1, enumerable: false
-      });
-      it('should get own keys', function() {
-        assert.deepEqual(ownKeys(o), ["a", a]);
-      });
-    });
+
+    st.deepEqual(ownKeys(o), ['a', a], 'gets own keys');
   });
 
+  t.end();
 });
