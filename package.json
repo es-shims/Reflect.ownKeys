@@ -1,28 +1,38 @@
 {
-  "name": "reflect.ownkeys",
-  "version": "0.2.0",
-  "description": "Polyfill for ES6's Reflect.ownKeys",
-  "main": "index.js",
-  "scripts": {
-    "test": "mocha"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/glenjamin/Reflect.ownKeys.git"
-  },
-  "keywords": [
-    "es6",
-    "reflect",
-    "ownkeys",
-    "polyfill"
-  ],
-  "author": "Glen Mailer <glen@stainlessed.co.uk>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/glenjamin/Reflect.ownKeys/issues"
-  },
-  "homepage": "https://github.com/glenjamin/Reflect.ownKeys",
-  "devDependencies": {
-    "mocha": "^2.4.5"
-  }
+	"name": "reflect.ownkeys",
+	"version": "0.2.0",
+	"description": "Polyfill for ES6's Reflect.ownKeys",
+	"main": "index.js",
+	"scripts": {
+		"test": "mocha",
+		"version": "auto-changelog && git add CHANGELOG.md",
+		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
+	},
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/glenjamin/Reflect.ownKeys.git"
+	},
+	"keywords": [
+		"es6",
+		"reflect",
+		"ownkeys",
+		"polyfill"
+	],
+	"author": "Glen Mailer <glen@stainlessed.co.uk>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/glenjamin/Reflect.ownKeys/issues"
+	},
+	"homepage": "https://github.com/glenjamin/Reflect.ownKeys",
+	"devDependencies": {
+		"auto-changelog": "^1.16.2",
+		"mocha": "^2.4.5"
+	},
+	"auto-changelog": {
+		"output": "CHANGELOG.md",
+		"template": "keepachangelog",
+		"unreleased": false,
+		"commitLimit": false,
+		"backfillLimit": false
+	}
 }
