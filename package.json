@@ -22,6 +22,9 @@
 		"polyfill"
 	],
 	"author": "Glen Mailer <glen@stainlessed.co.uk>",
+	"funding": {
+		"url": "https://github.com/sponsors/ljharb"
+	},
 	"license": "MIT",
 	"bugs": {
 		"url": "https://github.com/glenjamin/Reflect.ownKeys/issues"
