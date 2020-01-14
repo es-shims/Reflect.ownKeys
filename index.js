@@ -1,11 +1,13 @@
+'use strict';
+
 if (typeof Reflect === 'object' && typeof Reflect.ownKeys === 'function') {
-  module.exports = Reflect.ownKeys;
+	module.exports = Reflect.ownKeys;
 } else if (typeof Object.getOwnPropertySymbols === 'function') {
-  module.exports = function Reflect_ownKeys(o) {
-    return (
-      Object.getOwnPropertyNames(o).concat(Object.getOwnPropertySymbols(o))
-    );
-  }
+	module.exports = function ownKeys(o) {
+		return (
+			Object.getOwnPropertyNames(o).concat(Object.getOwnPropertySymbols(o))
+		);
+	};
 } else {
-  module.exports = Object.getOwnPropertyNames;
+	module.exports = Object.getOwnPropertyNames;
 }
