@@ -1,7 +1,7 @@
 {
 	"name": "reflect.ownkeys",
 	"version": "0.2.0",
-	"description": "Polyfill for ES6's Reflect.ownKeys",
+	"description": "ES2015 spec-compliant shim for Reflect.ownKeys",
 	"main": "index.js",
 	"scripts": {
 		"prepublish": "safe-publish-latest",
@@ -16,23 +16,29 @@
 	},
 	"repository": {
 		"type": "git",
-		"url": "https://github.com/glenjamin/Reflect.ownKeys.git"
+		"url": "https://github.com/es-shims/Reflect.ownKeys.git"
 	},
 	"keywords": [
 		"es6",
+		"es2015",
 		"reflect",
 		"ownkeys",
-		"polyfill"
+		"polyfill",
+		"shim",
+		"es-shim API"
 	],
-	"author": "Glen Mailer <glen@stainlessed.co.uk>",
+	"author": "Jordan Harband <ljharb@gmail.com>",
+	"contributors": [
+		"Glen Mailer <glen@stainlessed.co.uk>"
+	],
 	"funding": {
 		"url": "https://github.com/sponsors/ljharb"
 	},
 	"license": "MIT",
 	"bugs": {
-		"url": "https://github.com/glenjamin/Reflect.ownKeys/issues"
+		"url": "https://github.com/es-shims/Reflect.ownKeys/issues"
 	},
-	"homepage": "https://github.com/glenjamin/Reflect.ownKeys",
+	"homepage": "https://github.com/es-shims/Reflect.ownKeys",
 	"devDependencies": {
 		"@es-shims/api": "^2.1.2",
 		"@ljharb/eslint-config": "^15.1.0",
