@@ -1,27 +1,37 @@
 {
 	"name": "reflect.ownkeys",
-	"version": "0.2.0",
+	"version": "1.0.0",
 	"description": "ES2015 spec-compliant shim for Reflect.ownKeys",
 	"main": "index.js",
 	"exports": {
 		".": [
-			{ "default": "./index.js" },
+			{
+				"default": "./index.js"
+			},
 			"./index.js"
 		],
 		"./auto": [
-			{ "default": "./auto.js" },
+			{
+				"default": "./auto.js"
+			},
 			"./auto.js"
 		],
 		"./shim": [
-			{ "default": "./shim.js" },
+			{
+				"default": "./shim.js"
+			},
 			"./shim.js"
 		],
 		"./polyfill": [
-			{ "default": "./polyfill.js" },
+			{
+				"default": "./polyfill.js"
+			},
 			"./polyfill.js"
 		],
 		"./implementation": [
-			{ "default": "./implementation.js" },
+			{
+				"default": "./implementation.js"
+			},
 			"./implementation.js"
 		],
 		"./package": "./package.json",
