@@ -8,7 +8,7 @@ var ownKeys = require('..');
 test('normal object', function (t) {
 	var o = { a: 1, b: 2 };
 
-	t.deepEqual(ownKeys(o), ['a', 'b'], 'gets own keys');
+	t.deepEqual(ownKeys(o).sort(), ['a', 'b'].sort(), 'gets own keys');
 
 	t.end();
 });
@@ -17,7 +17,7 @@ test('object with prototype', function (t) {
 	var p = { a: 1, b: 2 };
 	var o = { c: 3, d: 4, __proto__: p };
 
-	t.deepEqual(ownKeys(o), ['c', 'd'], 'gets own keys');
+	t.deepEqual(ownKeys(o).sort(), ['c', 'd'].sort(), 'gets own keys');
 
 	t.end();
 });
@@ -35,7 +35,7 @@ test('object with non-enumerable properties', { skip: !Object.defineProperty }, 
 		enumerable: false
 	});
 
-	t.deepEqual(ownKeys(o), ['a', 'b'], 'gets own keys');
+	t.deepEqual(ownKeys(o).sort(), ['a', 'b'].sort(), 'gets own keys');
 });
 
 test('Symbols', { skip: !hasSymbols }, function (t) {
