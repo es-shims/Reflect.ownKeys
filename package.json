@@ -8,6 +8,7 @@
 		"lint": "eslint .",
 		"pretest": "npm run lint",
 		"test": "node test/test",
+		"posttest": "npx aud",
 		"version": "auto-changelog && git add CHANGELOG.md",
 		"postversion": "auto-changelog && git add CHANGELOG.md && git commit --no-edit --amend && git tag -f \"v$(node -e \"console.log(require('./package.json').version)\")\""
 	},
