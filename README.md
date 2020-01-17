@@ -1,5 +1,6 @@
 # reflect.ownkeys <sup>[![Version Badge][npm-version-svg]][package-url]</sup>
 
+
 [![Build Status][travis-svg]][travis-url]
 [![dependency status][deps-svg]][deps-url]
 [![dev dependency status][dev-deps-svg]][dev-deps-url]
@@ -7,6 +8,8 @@
 [![Downloads][downloads-image]][downloads-url]
 
 [![npm badge][npm-badge-png]][package-url]
+
+[![Greenkeeper badge][greenkeeper-image]][greenkeeper-url]
 
 An ES2015 spec-compliant `Reflect.ownKeys` shim. Invoke its "shim" method to shim `Reflect.ownKeys` if it is unavailable or noncompliant.
 
@@ -53,3 +56,5 @@ Simply clone the repo, `npm install`, and run `npm test`
 [license-url]: LICENSE
 [downloads-image]: http://img.shields.io/npm/dm/reflect.ownkeys.svg
 [downloads-url]: http://npm-stat.com/charts.html?package=reflect.ownkeys
+[greenkeeper-image]: https://badges.greenkeeper.io/es-shims/Reflect.ownKeys.svg
+[greenkeeper-url]: https://greenkeeper.io/
