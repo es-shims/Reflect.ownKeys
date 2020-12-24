@@ -5,6 +5,26 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.0.2](https://github.com/es-shims/Reflect.ownKeys/compare/v1.0.1...v1.0.2) - 2020-12-24
+
+### Commits
+
+- [Tests] migrate tests to Github Actions [`542dff9`](https://github.com/es-shims/Reflect.ownKeys/commit/542dff9a5eb6469d91c12100d26c0b907a7a756a)
+- [Tests] complete test suite [`913267b`](https://github.com/es-shims/Reflect.ownKeys/commit/913267bd32a0b5c27ee355cf242f2e5f944a89a0)
+- [meta] do not publish github action workflow files [`ec9eeae`](https://github.com/es-shims/Reflect.ownKeys/commit/ec9eeae95281ef6b7be0722fb3bf461bcec2b657)
+- [Tests] run `nyc` on all tests; use `tape` runner [`8483ad1`](https://github.com/es-shims/Reflect.ownKeys/commit/8483ad1950cbe878faf6992113880a398c885f75)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `tape` [`9ef3908`](https://github.com/es-shims/Reflect.ownKeys/commit/9ef39089ed6db9f8dc4c31822c8282f8f7dd5a03)
+- [readme] fix repo URLs; remove defunct badges [`f29aadc`](https://github.com/es-shims/Reflect.ownKeys/commit/f29aadc1f2bd12bb7626df1047cec06690ddc854)
+- [Fix] `shim`: install `Reflect` on the global when it is not available [`d7d00e0`](https://github.com/es-shims/Reflect.ownKeys/commit/d7d00e08ce990996d32a9aa524237b62afc17fcd)
+- [actions] add "Allow Edits" workflow [`00dfcd4`](https://github.com/es-shims/Reflect.ownKeys/commit/00dfcd41bae67352d6658fc4792b802f3bad62f4)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `tape` [`05a5da6`](https://github.com/es-shims/Reflect.ownKeys/commit/05a5da610ae2b5b485bce805ba6b135c6025a004)
+- [Refactor] use `call-bind` instead of `es-abstract` where appropriate; update `es-abstract` [`2e2116c`](https://github.com/es-shims/Reflect.ownKeys/commit/2e2116c10c06bc0248ac13a194f8b62dec7a195e)
+- [actions] switch Automatic Rebase workflow to `pull_request_target` event [`613356b`](https://github.com/es-shims/Reflect.ownKeys/commit/613356b5f1004591c3086f36a803c3f42359f7fe)
+- [Dev Deps] update `aud`, `auto-changelog` [`175764b`](https://github.com/es-shims/Reflect.ownKeys/commit/175764bcbc0a9ce46c12dbd73a8a28d5598041b9)
+- [Dev Deps] update `auto-changelog`, `tape` [`abd63ef`](https://github.com/es-shims/Reflect.ownKeys/commit/abd63efe8ddd17c7a98f97d4a5045a13b00d19fd)
+- [Tests] only audit prod deps [`98f754e`](https://github.com/es-shims/Reflect.ownKeys/commit/98f754e28c46827bd984557202ac928464a62167)
+- [Deps] update `es-abstract` [`e532e6f`](https://github.com/es-shims/Reflect.ownKeys/commit/e532e6f20ef032dbbf0efa3dbf07af5c0f62c77a)
+
 ## [v1.0.1](https://github.com/es-shims/Reflect.ownKeys/compare/v1.0.0...v1.0.1) - 2020-01-31
 
 ### Commits
