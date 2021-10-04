@@ -5,6 +5,25 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.0](https://github.com/es-shims/Reflect.ownKeys/compare/v1.0.2...v1.1.0) - 2021-10-04
+
+### Commits
+
+- [New] add main ESM entry point [`a4eda1e`](https://github.com/es-shims/Reflect.ownKeys/commit/a4eda1e847f70a2a842776595fcfe92be8aebd77)
+- [actions] use `node/install` instead of `node/run`; use `codecov` action [`b4d419e`](https://github.com/es-shims/Reflect.ownKeys/commit/b4d419e229fcd892dcce2a9ba371d9fdaf84fd6a)
+- [Fix] shim `Reflect[Symbol.toStringTag]` when needed [`c5952eb`](https://github.com/es-shims/Reflect.ownKeys/commit/c5952ebcec0fda7e17533b6106e8efc7294d5800)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `aud`, `auto-changelog`, `tape` [`de6abd1`](https://github.com/es-shims/Reflect.ownKeys/commit/de6abd1afb7d4ed2a3e986276f1d5c6086e5045b)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `call-bind`, `tape` [`49bbcd3`](https://github.com/es-shims/Reflect.ownKeys/commit/49bbcd35024a54dfdbb2522a6fd0f7e4576f23a4)
+- [readme] add github actions/codecov badges [`422dfdd`](https://github.com/es-shims/Reflect.ownKeys/commit/422dfddbca9734957ea2b6a44d9a5939c5bccd87)
+- [Dev Deps] update `eslint`, `has-symbols`, `tape` [`6c3825d`](https://github.com/es-shims/Reflect.ownKeys/commit/6c3825dde83e23222b4daf55738d0e578b77a82d)
+- [Deps] update `es-abstract`, `globalthis` [`eca0e12`](https://github.com/es-shims/Reflect.ownKeys/commit/eca0e12ee821f27ef56c492c6741c12a97109f93)
+- [actions] update workflows [`ee73576`](https://github.com/es-shims/Reflect.ownKeys/commit/ee73576034928654629bca2b01cde1eddfd84432)
+- [meta] use `prepublishOnly` script for npm 7+ [`f470670`](https://github.com/es-shims/Reflect.ownKeys/commit/f470670341fc906241bd0d7558b451ebb10167f3)
+- [actions] update workflows [`a6e7274`](https://github.com/es-shims/Reflect.ownKeys/commit/a6e7274616c28abbe9ee293e54184071c4fd8faf)
+- [Deps] update `es-abstract` [`ec32dd8`](https://github.com/es-shims/Reflect.ownKeys/commit/ec32dd8e2d27b44d87dcb65ad49ba84d18741761)
+- [Fix] move `call-bind` to prod deps [`4056614`](https://github.com/es-shims/Reflect.ownKeys/commit/40566140f6172128b3247b48ec2218710adbc1ae)
+- [Deps] update `es-abstract` [`93bbc28`](https://github.com/es-shims/Reflect.ownKeys/commit/93bbc285db06dc3dde366f4944a724b624eb03b1)
+
 ## [v1.0.2](https://github.com/es-shims/Reflect.ownKeys/compare/v1.0.1...v1.0.2) - 2020-12-24
 
 ### Commits
