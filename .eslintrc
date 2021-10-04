@@ -4,6 +4,13 @@
 	"extends": "@ljharb",
 
 	"rules": {
-		"new-cap": [2, { "capIsNewExceptions": ["OwnPropertyKeys"] }],
+		"id-length": 0,
+		"new-cap": [2, {
+			"capIsNewExceptions": [
+				"CreateMethodProperty",
+				"DefinePropertyOrThrow",
+				"OwnPropertyKeys",
+			],
+		}],
 	},
 }
