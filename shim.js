@@ -1,7 +1,7 @@
 'use strict';
 
-var CreateMethodProperty = require('es-abstract/2021/CreateMethodProperty');
-var DefinePropertyOrThrow = require('es-abstract/2021/DefinePropertyOrThrow');
+var CreateMethodProperty = require('es-abstract/2022/CreateMethodProperty');
+var DefinePropertyOrThrow = require('es-abstract/2022/DefinePropertyOrThrow');
 var globalThis = require('globalthis')();
 
 var getPolyfill = require('./polyfill');
