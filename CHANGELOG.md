@@ -5,6 +5,18 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.1](https://github.com/es-shims/Reflect.ownKeys/compare/v1.1.0...v1.1.1) - 2022-11-07
+
+### Commits
+
+- [actions] reuse common workflows [`fce754f`](https://github.com/es-shims/Reflect.ownKeys/commit/fce754f520640f5be0a58cccd8bc9ef38e1f105f)
+- [meta] use `npmignore` to autogenerate an npmignore file [`ae06130`](https://github.com/es-shims/Reflect.ownKeys/commit/ae061304ec59a6347819454e60ca2bfe28f3501d)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `aud`, `auto-changelog`, `functions-have-names`, `has-symbols`, `tape` [`f8c24f1`](https://github.com/es-shims/Reflect.ownKeys/commit/f8c24f1b7a58c8fcc1e815d523d42dabf2d9097e)
+- [Dev Deps] update `eslint`, `@ljharb/eslint-config`, `@es-shims/api`, `safe-publish-latest`, `tape` [`a25e141`](https://github.com/es-shims/Reflect.ownKeys/commit/a25e14152d87b9d6235963e62c484ca8453f58d6)
+- [actions] update codecov uploader [`22a8d65`](https://github.com/es-shims/Reflect.ownKeys/commit/22a8d6577bc50c503215c1c4340355e56a914226)
+- [actions] update rebase action to use reusable workflow [`483bf80`](https://github.com/es-shims/Reflect.ownKeys/commit/483bf805982b468e6bd1112c5a3e2cace23f0b4b)
+- [Deps] update `define-properties`, `es-abstract`, `globalthis` [`1e1a633`](https://github.com/es-shims/Reflect.ownKeys/commit/1e1a6336d10b97832ed9293fc138390b6b2f4bcc)
+
 ## [v1.1.0](https://github.com/es-shims/Reflect.ownKeys/compare/v1.0.2...v1.1.0) - 2021-10-04
 
 ### Commits
