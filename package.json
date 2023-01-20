@@ -75,8 +75,8 @@
 	"dependencies": {
 		"call-bind": "^1.0.2",
 		"define-properties": "^1.1.4",
-		"es-abstract": "^1.20.5",
-		"es-set-tostringtag": "^1.0.0",
+		"es-abstract": "^1.21.1",
+		"es-set-tostringtag": "^2.0.1",
 		"globalthis": "^1.0.3"
 	},
 	"auto-changelog": {
