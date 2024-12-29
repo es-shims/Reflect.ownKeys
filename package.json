@@ -77,7 +77,8 @@
 		"define-properties": "^1.2.0",
 		"es-abstract": "^1.22.1",
 		"es-set-tostringtag": "^2.0.1",
-		"globalthis": "^1.0.3"
+		"globalthis": "^1.0.3",
+		"own-keys": "^1.0.0"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
