@@ -67,10 +67,10 @@
 	"dependencies": {
 		"call-bind": "^1.0.8",
 		"define-properties": "^1.2.1",
-		"es-abstract": "^1.23.7",
+		"es-abstract": "^1.23.8",
 		"es-set-tostringtag": "^2.0.3",
 		"globalthis": "^1.0.4",
-		"own-keys": "^1.0.0"
+		"own-keys": "^1.0.1"
 	},
 	"auto-changelog": {
 		"output": "CHANGELOG.md",
