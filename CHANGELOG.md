@@ -5,6 +5,19 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.5](https://github.com/es-shims/Reflect.ownKeys/compare/v1.1.4...v1.1.5) - 2024-12-29
+
+### Commits
+
+- [meta] remove useless ESM [`409aed3`](https://github.com/es-shims/Reflect.ownKeys/commit/409aed33bb39e20eaa3ebfe0843850107789c864)
+- [Dev Deps] update `@es-shims/api`, `@ljharb/eslint-config`, `auto-changelog`, `has-symbols`, `npmignore`, `tape` [`26459fa`](https://github.com/es-shims/Reflect.ownKeys/commit/26459fa55c0f4492ebf4a520135eff95b4b198c8)
+- [Deps] update `call-bind`, `define-properties`, `es-abstract`, `es-set-tostringtag`, `globalthis` [`01e75d0`](https://github.com/es-shims/Reflect.ownKeys/commit/01e75d0bdb7ff820444aa49767f72de13a8a4590)
+- [Refactor] use `own-keys` [`8726824`](https://github.com/es-shims/Reflect.ownKeys/commit/87268243942519ab13e99e4ec2d5589169045b52)
+- [Deps] update `es-abstract`, `own-keys` [`68cfc76`](https://github.com/es-shims/Reflect.ownKeys/commit/68cfc763072a4199720baf57e0e2e04804a1a827)
+- [meta] add missing `engines.node` [`36fecb9`](https://github.com/es-shims/Reflect.ownKeys/commit/36fecb95890a3869850632c7392b2ed215768291)
+- [Tests] replace `aud` with `npm audit` [`1f3cca2`](https://github.com/es-shims/Reflect.ownKeys/commit/1f3cca218a524c0782000d569a814a32faa3daa1)
+- [Dev Deps] add missing peer dep [`f00ecf4`](https://github.com/es-shims/Reflect.ownKeys/commit/f00ecf458fcd2103992a025bc16dc61b12a9fafb)
+
 ## [v1.1.4](https://github.com/es-shims/Reflect.ownKeys/compare/v1.1.3...v1.1.4) - 2023-08-29
 
 ### Commits
