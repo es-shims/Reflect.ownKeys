@@ -66,8 +66,8 @@
 	},
 	"dependencies": {
 		"call-bind": "^1.0.8",
+		"define-data-property": "^1.1.4",
 		"define-properties": "^1.2.1",
-		"es-abstract": "^1.24.1",
 		"es-set-tostringtag": "^2.1.0",
 		"globalthis": "^1.0.4",
 		"own-keys": "^1.0.1"
