@@ -5,6 +5,16 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/)
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [v1.1.6](https://github.com/es-shims/Reflect.ownKeys/compare/v1.1.5...v1.1.6) - 2026-01-02
+
+### Commits
+
+- [meta] remove .npmignore [`b5707c1`](https://github.com/es-shims/Reflect.ownKeys/commit/b5707c1f591081f708ba3f1ffd4b5376fb9f9e02)
+- [Refactor] use `define-data-property` instead of the entirety of `es-abstract` [`73a5a5e`](https://github.com/es-shims/Reflect.ownKeys/commit/73a5a5ebb37ded1204aafde6b725c5cb361be522)
+- [Dev Deps] update `@ljharb/eslint-config`, `eslint`, `has-strict-mode`, `npmignore` [`4ab1531`](https://github.com/es-shims/Reflect.ownKeys/commit/4ab15312c963c1afb32030ddd6edf5f7aec7ea89)
+- [Deps] update `es-abstract`, `es-set-tostringtag` [`9a41ed6`](https://github.com/es-shims/Reflect.ownKeys/commit/9a41ed6db969c2f133f0bc36dcbce5bf2fdbe64f)
+- [readme] replace runkit CI badge with shields.io check-runs badge [`469fe78`](https://github.com/es-shims/Reflect.ownKeys/commit/469fe789fbbc4b3a8dd15ee2538f7dadbdf3eb8e)
+
 ## [v1.1.5](https://github.com/es-shims/Reflect.ownKeys/compare/v1.1.4...v1.1.5) - 2024-12-29
 
 ### Commits
